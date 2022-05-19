@@ -1,6 +1,6 @@
 # NgStandaloneComponents
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6 and updated to version 14.0.0-rc.1
 
 ## Development server
 
