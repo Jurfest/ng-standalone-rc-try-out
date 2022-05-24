@@ -1,0 +1,21 @@
+<div class="main">
+  <form [formGroup]="newsletterForm" (ngSubmit)="handleSubmit()">
+    <div class="form-field">
+      <label for="name">Name:</label>
+      <input formControlName="name" type="text" placeholder="name" />
+    </div>
+    <div class="form-field">
+      <label for="age">Age:</label>
+      <input formControlName="age" type="text" placeholder="age" />
+    </div>
+    <div class="form-field">
+      <label for="email">Email:</label>
+      <input formControlName="email" type="text" placeholder="email" />
+    </div>
+    <div class="buttons">
+      <button (click)="goBack()" class="cancel">Cancel</button>
+      <button type="submit">Subscribe</button>
+    </div>
+  </form>
+  <p>{{ message }}</p>
+</div>

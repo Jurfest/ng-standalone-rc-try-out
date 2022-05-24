@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -11,7 +12,11 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent implements OnInit {
   title = 'ng-standalone-components';
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  navigateToNewsletter(): void {
+    this.router.navigate(['/newsletter']);
+  }
 }

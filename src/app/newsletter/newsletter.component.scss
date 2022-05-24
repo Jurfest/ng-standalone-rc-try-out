@@ -1,0 +1,106 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+}
+
+label {
+  width: 564px;
+  height: 18px;
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #666666;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  margin-bottom: 0.5rem;
+
+  &.error {
+    font-weight: 400;
+    color: #eb5757;
+    order: 2;
+  }
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+
+  width: 564px;
+
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+
+  &.invalid {
+    border: 2px solid #eb5757;
+  }
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.form-field {
+  margin: 1rem 0 1rem 0;
+}
+
+.buttons {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 220px;
+
+  margin-top: 2rem;
+  height: 56px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 8;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 16px 16px 60px;
+  gap: 10px;
+  cursor: pointer;
+
+  width: 172px;
+  height: 56px;
+
+  /* Keatext purple */
+  background: #7a5cfa;
+  border-radius: 8px;
+  color: #ffffff;
+
+  &.cancel {
+    background: #ffffff;
+    color: #7a5cfa;
+    /* Keatext purple */
+    border: 1px solid #7a5cfa;
+    border-radius: 8px;
+  }
+}

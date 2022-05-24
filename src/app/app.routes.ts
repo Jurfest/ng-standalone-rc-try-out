@@ -13,6 +13,12 @@ export const routes: Routes = [
       import('./home/home.component').then((m) => m.HomeComponent),
   },
   {
+    path: 'newsletter',
+    title: 'Newsletter',
+    loadComponent: () =>
+      import('./newsletter/newsletter.component').then((m) => m.NewsletterComponent),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
